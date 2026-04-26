@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -83,7 +83,8 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		CDB83F072F9E38670036F56A /* BitPayAppUITests */ = {isa = PBXGroup; explicitFileTypes = {}; explicitFolders = (); path = BitPayAppUITests; sourceTree = "<group>"; };
+		CDB83F072F9E38670036F56A /* BitPayAppUITests */ = {isa = PBXGroup; 
+path = BitPayAppUITests; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,9 +248,6 @@
 			);
 			dependencies = (
 				CDB83F0D2F9E38670036F56A /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CDB83F072F9E38670036F56A /* BitPayAppUITests */,
 			);
 			name = BitPayAppUITests;
 			packageProductDependencies = (
