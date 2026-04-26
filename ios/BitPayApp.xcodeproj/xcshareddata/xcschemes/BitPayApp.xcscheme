@@ -29,12 +29,13 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
-            skipped = "NO">
+            skipped = "NO"
+            parallelizable = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "BitPayAppTests"
-               BlueprintName = "BitPayAppTests"
+               BlueprintIdentifier = "CDB83F052F9E38670036F56A"
+               BuildableName = "BitPayAppUITests.xctest"
+               BlueprintName = "BitPayAppUITests"
                ReferencedContainer = "container:BitPayApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
