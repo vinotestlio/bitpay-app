@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -24,6 +24,7 @@
 		6D7C95E72E9007E200F0D481 /* RCTPushPermissionManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6D7C95E62E9007E200F0D481 /* RCTPushPermissionManager.mm */; };
 		71BABDA4524A43E98A190C87 /* Archivo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6D649751C2644FDCA18A5547 /* Archivo-Light.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
+		CD1DE10C2F9F77E50032D46D /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1DE10A2F9F77E50032D46D /* Placeholder.swift */; };
 		D34892F44CAB44409EC335A9 /* Archivo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4435EB64D2448EC885B3036 /* Archivo-Black.ttf */; };
 		D9739196BA804EA29143DA96 /* Archivo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 715670CB346B45A7A9EC2044 /* Archivo-Bold.ttf */; };
 		E6807D9059A643129784A5C3 /* Archivo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4DCF32F2D2364E70AD2F1E68 /* Archivo-Thin.ttf */; };
@@ -71,6 +72,7 @@
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = BitPayApp/AppDelegate.swift; sourceTree = "<group>"; };
 		B1AA7DD4226DBC3478258808 /* libPods-BitPayApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitPayApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDAB70057C84109A9201936 /* Archivo-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Archivo-Regular.ttf"; path = "../assets/fonts/Archivo-Regular.ttf"; sourceTree = "<group>"; };
+		CD1DE10A2F9F77E50032D46D /* Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Placeholder.swift; sourceTree = "<group>"; };
 		CD5E59052F9F018400D82416 /* BitPayAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitPayAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30DDDCF29E5E048D75CCF1A /* BitPayApp/BundleHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BitPayApp/BundleHash.swift; sourceTree = "<group>"; };
 		E639E0380D05420CD0D64119 /* Pods-BitPayApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPayApp.release.xcconfig"; path = "Target Support Files/Pods-BitPayApp/Pods-BitPayApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -81,10 +83,6 @@
 		EF767449FFE9477D8B33CD84 /* Archivo-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Archivo-Medium.ttf"; path = "../assets/fonts/Archivo-Medium.ttf"; sourceTree = "<group>"; };
 		F4435EB64D2448EC885B3036 /* Archivo-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Archivo-Black.ttf"; path = "../assets/fonts/Archivo-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		CD1DE1082F9F744D0032D46D /* GeneratedTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = GeneratedTests; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
@@ -201,10 +199,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		CD1DE10B2F9F77E50032D46D /* GeneratedTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD1DE10A2F9F77E50032D46D /* Placeholder.swift */,
+			);
+			path = GeneratedTests;
+			sourceTree = "<group>";
+		};
 		CD5E59062F9F018400D82416 /* BitPayAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				CD1DE1082F9F744D0032D46D /* GeneratedTests */,
+				CD1DE10B2F9F77E50032D46D /* GeneratedTests */,
 			);
 			path = BitPayAppUITests;
 			sourceTree = "<group>";
@@ -255,9 +261,6 @@
 			);
 			dependencies = (
 				CD5E590C2F9F018400D82416 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				CD1DE1082F9F744D0032D46D /* GeneratedTests */,
 			);
 			name = BitPayAppUITests;
 			packageProductDependencies = (
@@ -467,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD1DE10C2F9F77E50032D46D /* Placeholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
