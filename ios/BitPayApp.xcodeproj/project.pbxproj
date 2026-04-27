@@ -83,7 +83,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		CD5E59062F9F018400D82416 /* BitPayAppUITests */ = {isa = PBXGroup; path = BitPayAppUITests; sourceTree = "<group>"; };
+		CD5E59142F9F448E00D82416 /* GeneratedTests */ = {isa = PBXGroup; path = GeneratedTests; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +199,14 @@
 				CD5E59052F9F018400D82416 /* BitPayAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CD5E59062F9F018400D82416 /* BitPayAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CD5E59142F9F448E00D82416 /* GeneratedTests */,
+			);
+			path = BitPayAppUITests;
 			sourceTree = "<group>";
 		};
 		CDB83EF22F9E363C0036F56A /* Recovered References */ = {
