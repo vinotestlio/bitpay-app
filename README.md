@@ -1,4 +1,4 @@
-tests
+tests workflow
 
 # BitPay App v2
 Welcome to BitPay App v2!
