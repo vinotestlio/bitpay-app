@@ -33,7 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		CDB83F0C2F9E38670036F56A /* PBXContainerItemProxy */ = {
+		CD5E590B2F9F018400D82416 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
@@ -71,7 +71,7 @@
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = BitPayApp/AppDelegate.swift; sourceTree = "<group>"; };
 		B1AA7DD4226DBC3478258808 /* libPods-BitPayApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitPayApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCDAB70057C84109A9201936 /* Archivo-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Archivo-Regular.ttf"; path = "../assets/fonts/Archivo-Regular.ttf"; sourceTree = "<group>"; };
-		CDB83F062F9E38670036F56A /* BitPayAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitPayAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5E59052F9F018400D82416 /* BitPayAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitPayAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30DDDCF29E5E048D75CCF1A /* BitPayApp/BundleHash.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BitPayApp/BundleHash.swift; sourceTree = "<group>"; };
 		E639E0380D05420CD0D64119 /* Pods-BitPayApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitPayApp.release.xcconfig"; path = "Target Support Files/Pods-BitPayApp/Pods-BitPayApp.release.xcconfig"; sourceTree = "<group>"; };
 		EC0FDD692CC92E90009E1B35 /* InAppMessageModule.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InAppMessageModule.mm; sourceTree = "<group>"; };
@@ -83,8 +83,7 @@
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
-		CDB83F072F9E38670036F56A /* BitPayAppUITests */ = {isa = PBXGroup; 
-path = BitPayAppUITests; sourceTree = "<group>"; };
+		CD5E59062F9F018400D82416 /* BitPayAppUITests */ = {isa = PBXGroup; path = BitPayAppUITests; sourceTree = "<group>"; };
 /* End PBXGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +96,7 @@ path = BitPayAppUITests; sourceTree = "<group>"; };
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDB83F032F9E38670036F56A /* Frameworks */ = {
+		CD5E59022F9F018400D82416 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -181,7 +180,7 @@ path = BitPayAppUITests; sourceTree = "<group>"; };
 			children = (
 				13B07FAE1A68108700A75B9A /* BitPayApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				CDB83F072F9E38670036F56A /* BitPayAppUITests */,
+				CD5E59062F9F018400D82416 /* BitPayAppUITests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				7950FCCDC90E6306EDD77BCD /* Pods */,
@@ -197,7 +196,7 @@ path = BitPayAppUITests; sourceTree = "<group>"; };
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* BitPayApp.app */,
-				CDB83F062F9E38670036F56A /* BitPayAppUITests.xctest */,
+				CD5E59052F9F018400D82416 /* BitPayAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -236,24 +235,24 @@ path = BitPayAppUITests; sourceTree = "<group>"; };
 			productReference = 13B07F961A680F5B00A75B9A /* BitPayApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		CDB83F052F9E38670036F56A /* BitPayAppUITests */ = {
+		CD5E59042F9F018400D82416 /* BitPayAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CDB83F0E2F9E38670036F56A /* Build configuration list for PBXNativeTarget "BitPayAppUITests" */;
+			buildConfigurationList = CD5E590D2F9F018400D82416 /* Build configuration list for PBXNativeTarget "BitPayAppUITests" */;
 			buildPhases = (
-				CDB83F022F9E38670036F56A /* Sources */,
-				CDB83F032F9E38670036F56A /* Frameworks */,
-				CDB83F042F9E38670036F56A /* Resources */,
+				CD5E59012F9F018400D82416 /* Sources */,
+				CD5E59022F9F018400D82416 /* Frameworks */,
+				CD5E59032F9F018400D82416 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CDB83F0D2F9E38670036F56A /* PBXTargetDependency */,
+				CD5E590C2F9F018400D82416 /* PBXTargetDependency */,
 			);
 			name = BitPayAppUITests;
 			packageProductDependencies = (
 			);
 			productName = BitPayAppUITests;
-			productReference = CDB83F062F9E38670036F56A /* BitPayAppUITests.xctest */;
+			productReference = CD5E59052F9F018400D82416 /* BitPayAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -268,7 +267,7 @@ path = BitPayAppUITests; sourceTree = "<group>"; };
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1240;
 					};
-					CDB83F052F9E38670036F56A = {
+					CD5E59042F9F018400D82416 = {
 						CreatedOnToolsVersion = 26.0.1;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
@@ -288,7 +287,7 @@ path = BitPayAppUITests; sourceTree = "<group>"; };
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* BitPayApp */,
-				CDB83F052F9E38670036F56A /* BitPayAppUITests */,
+				CD5E59042F9F018400D82416 /* BitPayAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -312,7 +311,7 @@ path = BitPayAppUITests; sourceTree = "<group>"; };
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDB83F042F9E38670036F56A /* Resources */ = {
+		CD5E59032F9F018400D82416 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -453,7 +452,7 @@ path = BitPayAppUITests; sourceTree = "<group>"; };
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CDB83F022F9E38670036F56A /* Sources */ = {
+		CD5E59012F9F018400D82416 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -463,10 +462,10 @@ path = BitPayAppUITests; sourceTree = "<group>"; };
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		CDB83F0D2F9E38670036F56A /* PBXTargetDependency */ = {
+		CD5E590C2F9F018400D82416 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 13B07F861A680F5B00A75B9A /* BitPayApp */;
-			targetProxy = CDB83F0C2F9E38670036F56A /* PBXContainerItemProxy */;
+			targetProxy = CD5E590B2F9F018400D82416 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -733,7 +732,7 @@ path = BitPayAppUITests; sourceTree = "<group>"; };
 			};
 			name = Release;
 		};
-		CDB83F0F2F9E38670036F56A /* Debug */ = {
+		CD5E590E2F9F018400D82416 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -772,7 +771,7 @@ path = BitPayAppUITests; sourceTree = "<group>"; };
 			};
 			name = Debug;
 		};
-		CDB83F102F9E38670036F56A /* Release */ = {
+		CD5E590F2F9F018400D82416 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -827,11 +826,11 @@ path = BitPayAppUITests; sourceTree = "<group>"; };
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CDB83F0E2F9E38670036F56A /* Build configuration list for PBXNativeTarget "BitPayAppUITests" */ = {
+		CD5E590D2F9F018400D82416 /* Build configuration list for PBXNativeTarget "BitPayAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CDB83F0F2F9E38670036F56A /* Debug */,
-				CDB83F102F9E38670036F56A /* Release */,
+				CD5E590E2F9F018400D82416 /* Debug */,
+				CD5E590F2F9F018400D82416 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
