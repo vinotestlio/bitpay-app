@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -81,6 +81,10 @@
 		EF767449FFE9477D8B33CD84 /* Archivo-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Archivo-Medium.ttf"; path = "../assets/fonts/Archivo-Medium.ttf"; sourceTree = "<group>"; };
 		F4435EB64D2448EC885B3036 /* Archivo-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Archivo-Black.ttf"; path = "../assets/fonts/Archivo-Black.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		CD1DE1082F9F744D0032D46D /* GeneratedTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = GeneratedTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
@@ -200,16 +204,9 @@
 		CD5E59062F9F018400D82416 /* BitPayAppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				CD5E59142F9F448E00D82416 /* GeneratedTests */,
+				CD1DE1082F9F744D0032D46D /* GeneratedTests */,
 			);
 			path = BitPayAppUITests;
-			sourceTree = "<group>";
-		};
-		CD5E59142F9F448E00D82416 /* GeneratedTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GeneratedTests;
 			sourceTree = "<group>";
 		};
 		CDB83EF22F9E363C0036F56A /* Recovered References */ = {
@@ -258,6 +255,9 @@
 			);
 			dependencies = (
 				CD5E590C2F9F018400D82416 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CD1DE1082F9F744D0032D46D /* GeneratedTests */,
 			);
 			name = BitPayAppUITests;
 			packageProductDependencies = (
