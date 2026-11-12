@@ -12,6 +12,9 @@ on:
           - Sandbox
           - Main_Workspace
 
+permissions:
+  contents: read
+
 concurrency:
   group: e2e-android-espresso-${{ github.ref }}
   cancel-in-progress: true
@@ -122,9 +125,11 @@ jobs:
         run: yarn set:WalletPhrase
 
       - name: Create Sentry properties
+        env:
+          SENTRY_PROPERTIES: ${{ secrets.SENTRY_PROPERTIES }}
         run: |
-          echo "${{ secrets.SENTRY_PROPERTIES }}" > sentry.properties
-          echo "${{ secrets.SENTRY_PROPERTIES }}" > android/sentry.properties
+          printf '%s' "$SENTRY_PROPERTIES" > sentry.properties
+          printf '%s' "$SENTRY_PROPERTIES" > android/sentry.properties
 
       - name: Set native config values
         run: yarn set:dev
@@ -196,6 +201,7 @@ jobs:
           find allure-results -type f || echo "nothing"
 
       - name: Check Allure results were produced
+        id: check_allure
         if: always()
         run: |
           if [ -z "$(find allure-results -name '*.json' 2>/dev/null)" ]; then
@@ -225,7 +231,7 @@ jobs:
           sudo ln -sf /opt/allure/bin/allure /usr/local/bin/allure
 
       - name: Zip Allure Results
-        if: always()
+        if: always() && steps.check_allure.outcome == 'success'
         run: |
           rm -f allure-results.zip
           zip -r allure-results.zip allure-results/
@@ -233,7 +239,7 @@ jobs:
           unzip -l allure-results.zip | head -30
 
       - name: Upload Allure Results Artifact
-        if: always()
+        if: always() && steps.check_allure.outcome == 'success'
         uses: actions/upload-artifact@v4
         with:
           name: allure-results
@@ -257,7 +263,7 @@ jobs:
         run: npm install -g @testlio/cli
 
       - name: Upload Results to Testlio
-        if: always()
+        if: always() && steps.check_allure.outcome == 'success'
         env:
           TESTLIO_DEVICE_ID: ${{ secrets.TESTLIO_ANDROID_DEVICE_ID }}
           RUN_API_TOKEN: ${{ inputs.environment == 'Sandbox' && secrets.TESTLIO_RUN_TOKEN || secrets.TESTLIO_RUN_TOKEN_BITPAY }}
